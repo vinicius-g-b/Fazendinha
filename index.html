@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Fazenda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="game">
+        <header class="game-header">
+            <div>
+                <h1>🌻 Mini Fazenda</h1>
+                <p>Plante, colha e aumente sua fazenda</p>
+            </div>
+            <div class="status">
+                <div class="money">💰 <span id="money">50</span></div>
+                <button id="sell-button">🛒 Vender tudo</button>
+            </div>
+        </header>
+
+        <section class="content">
+            <div class="farm-container">
+                <h2>Minha fazenda</h2>
+                <div class="farm" id="farm"></div>
+            </div>
+            
+            <aside class="shop">
+                <h2>Nossa Loja</h2>
+                <button class="seed-select" data-seed="carrot">
+                    <span class="emoji">🥕</span>
+                    <div>
+                        <strong>Cenoura</strong>
+                        <small>🌱 Compra: 2 moedas</small>
+                        <small>💰 Venda: 8 moedas</small>
+                    </div>
+                </button>
+                <button class="seed-select" data-seed="corn">
+                    <span class="emoji">🌽</span>
+                    <div>
+                        <strong>Milho</strong>
+                        <small>🌱 Compra: 10 moedas</small>
+                        <small>💰 Venda: 13 moedas</small>
+                    </div>
+                </button>
+                <button class="seed-select" data-seed="tomato">
+                    <span class="emoji">🍅</span>
+                    <div>
+                        <strong>Tomate</strong>
+                        <small>🌱 Compra: 15 moedas</small>
+                        <small>💰 Venda: 18 moedas</small>
+                    </div>
+                </button>
+            </aside>
+        </section>
+
+        <p class="message" id="message">Selecione uma semente e clique em um terreno livre para plantar.</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
